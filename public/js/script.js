@@ -42,9 +42,9 @@ scrollNav()
 $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
 
-    $('.card-image-content').css({
-        'transform' : 'translate(0px, '+ wScroll/12 +'%)'
-    })
+    // $('.card-image-content').css({
+    //     'transform' : 'translate(0px, '+ wScroll/12 +'%)'
+    // })
 
     $('.parallax').each(function () {
         let offset = $(this).offset().top;

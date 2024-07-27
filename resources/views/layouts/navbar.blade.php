@@ -9,12 +9,20 @@
             <li>
                 <a href="/" class="nav-item text-uppercase text-decoration-none text-light">home</a>
             </li>
-            <li><a href="/my-certifications" class="nav-item text-uppercase text-decoration-none text-light">my
-                    certifications</a></li>
-            <li><a href="/my-projects" class="nav-item text-uppercase text-decoration-none text-light">projects</a></li>
-            <li><a href="/comments" class="nav-item text-uppercase text-decoration-none text-light">give some
-                    comments</a></li>
-            <li><a href="/contact" class="nav-item text-uppercase text-decoration-none text-light">contact</a></li>
+            <li>
+                <a href="/my-certifications" class="nav-item text-uppercase text-decoration-none text-light">my
+                    certifications</a>
+            </li>
+            <li>
+                <a href="/my-projects" class="nav-item text-uppercase text-decoration-none text-light">projects</a>
+            </li>
+            <li>
+                <a href="/comments" class="nav-item text-uppercase text-decoration-none text-light">give some
+                    comments</a>
+                </li>
+            <li>
+                <a href="/contact" class="nav-item text-uppercase text-decoration-none text-light">contact</a>
+            </li>
         </ul>
     </nav>
 

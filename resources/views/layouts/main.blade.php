@@ -44,6 +44,58 @@
         AOS.init();
     </script>
 
+    {{-- jQuery --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize AOS
+            AOS.init();
+
+            // Function to animate numbers
+            function animateNumbers(element, target) {
+                $({
+                    countNum: 0
+                }).animate({
+                    countNum: target
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        element.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        element.text(this.countNum);
+                    }
+                });
+            }
+
+            // Function to animate progress bar width
+            function animateProgressBar(element, target) {
+                element.animate({
+                    width: target
+                }, 2000);
+            }
+
+            // Trigger animation when AOS event fires
+            document.addEventListener('aos:in', function(event) {
+                let elements = $(event.detail);
+
+                // Animate numbers
+                elements.find('h3.data-target').each(function() {
+                    let target = $(this).data('target');
+                    animateNumbers($(this), target);
+                });
+
+                // Animate progress bars
+                elements.find('.value').each(function() {
+                    let target = $(this).data('value');
+                    animateProgressBar($(this), target);
+                });
+            });
+        });
+    </script>
+
     {{-- my jqeury --}}
     <script src="{{ asset('js/jquery.js') }}"></script>
     {{-- js --}}

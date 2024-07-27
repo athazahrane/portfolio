@@ -91,14 +91,14 @@ body {
     transition: all 0.3s ease;
 }
 .nav-item:hover::after {
-    width: 100%;
+    width: 70%;
 }
 .nav-item.active::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 3px;
     border-radius: 10px;
     background-color: var(--txt-primary);
@@ -342,12 +342,27 @@ hr.hr {
     overflow: hidden;
 }
 .value {
-    width: 80%;
+    width: 0%;
     height: 100%;
     background-color: var(--txt-primary);
     border-radius: 1000px;
 }
 
+
+/* banner */
+.banner {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: rgb(54, 53, 56);
+}
+.limiting {
+    width: 3px;
+    height: 50px;
+    background-color: var(--txt-primary);
+}
+.icon-banner {
+    font-size: 3em;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -390,5 +405,8 @@ hr.hr {
     }
     .about .col-md-6 {
         justify-content: flex-start !important;
+    }
+    .banner .container .row .col-md-3 {
+        display: flex !important;
     }
 }

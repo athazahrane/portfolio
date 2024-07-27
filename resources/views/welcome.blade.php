@@ -1,7 +1,6 @@
 @extends('layouts.main')
 
 @section('content')
-
     <div class="custom-scrollbar" id="customScrollbar"></div>
 
     <section class="hero d-flex justify-content-center flex-column" id="hero">
@@ -114,8 +113,9 @@
         <div class="container">
             <h2 class="text-light text-uppercase title-prim mb-5" data-aos="fade-right">My Resume</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card-resume p-3 rounded shadow" data-aos="fade-up">
+
                         <h3 class="title-card text-capitalize mb-4 text-light">Expertise</h3>
                         <div class="card-content-resume text-light">
                             <h3 class="txt-primary">2022 - 2023</h3>
@@ -124,6 +124,7 @@
                             <p>I have completed my internship at PT Kreasi Sawala Nusantara for 6 months, I worked as a Web
                                 Designer and Frontend Web Developer</p>
                         </div>
+
                         <hr class="hr">
                         <div class="card-content-resume text-light">
                             <h3 class="txt-primary">2024 Fabruary</h3>
@@ -132,6 +133,7 @@
                             <p>in january 2024, i have taken and successfully completed the gmetrix certification exam in
                                 html and css</p>
                         </div>
+
                         <hr class="hr">
                         <div class="card-content-resume text-light">
                             <h3 class="txt-primary">2024 Fabruary</h3>
@@ -142,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card-resume p-3 rounded shadow text-light" data-aos="fade-up" data-aos-delay="300">
                         <h3 class="title-card text-light text-capitalize mb-4">education</h3>
                         <div class="card-content-resume">
@@ -171,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="multiple-cards p-3 rounded shadow mb-3" data-aos="fade-up" data-aos-delay="600">
                         <h3 class="text-light text-capitalize">skills</h3>
                         <br>
@@ -180,7 +182,7 @@
                             <h6 class="text-light mb-2">HTML5 & CSS3</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="88%"></div>
                                 </div>
                                 <label class="text-light fs-6">88%</label>
                             </div>
@@ -190,7 +192,7 @@
                             <h6 class="text-light mb-2">Bootstrap 5</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="90%"></div>
                                 </div>
                                 <label class="text-light fs-6">90%</label>
                             </div>
@@ -200,7 +202,7 @@
                             <h6 class="text-light mb-2">React Js</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="70%"></div>
                                 </div>
                                 <label class="text-light fs-6">70%</label>
                             </div>
@@ -210,7 +212,7 @@
                             <h6 class="text-light mb-2">Vite</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="50%"></div>
                                 </div>
                                 <label class="text-light fs-6">50%</label>
                             </div>
@@ -220,7 +222,7 @@
                             <h6 class="text-light mb-2">Angular</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="50%"></div>
                                 </div>
                                 <label class="text-light fs-6">50%</label>
                             </div>
@@ -230,7 +232,7 @@
                             <h6 class="text-light mb-2">PHP & Laravel</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="78%"></div>
                                 </div>
                                 <label class="text-light fs-6">78%</label>
                             </div>
@@ -243,7 +245,7 @@
                             <h6 class="text-light mb-2">english</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="70%"></div>
                                 </div>
                                 <label class="text-light fs-6">70%</label>
                             </div>
@@ -253,7 +255,7 @@
                             <h6 class="text-light mb-2">arabic</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="75%"></div>
                                 </div>
                                 <label class="text-light fs-6">75%</label>
                             </div>
@@ -263,7 +265,7 @@
                             <h6 class="text-light mb-2">japanese</h6>
                             <div class="progresss d-flex justify-content-between align-items-center gap-3">
                                 <div class="progress-content">
-                                    <div class="value rounded-full"></div>
+                                    <div class="value rounded-full" data-value="80%"></div>
                                 </div>
                                 <label class="text-light fs-6">80%</label>
                             </div>
@@ -274,6 +276,58 @@
             </div>
     </section>
 
+
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 justify-content-center align-items-center">
+                    <div class="content-banner d-flex align-items-center gap-3 mb-3" data-aos="fade-up">
+                        <i class="bi bi-alarm icon-banner fs-1"></i>
+                        <div class="limiting"></div>
+                        <div class="item">
+                            <h3 class="txt-primary data-target" data-target="12">0</h3>
+                            <p class="text-light">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center align-items-center">
+                    <div class="content-banner d-flex align-items-center gap-3 mb-3" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <i class="bi bi-layers icon-banner fs-1"></i>
+                        <div class="limiting"></div>
+                        <div class="item">
+                            <h3 class="txt-primary data-target" data-target="20">0</h3>
+                            <p class="text-light">Projects Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center align-items-center">
+                    <div class="content-banner d-flex align-items-center gap-3 mb-3" data-aos="fade-up"
+                        data-aos-delay="600">
+                        <i class="bi bi-emoji-smile icon-banner fs-1"></i>
+                        <div class="limiting"></div>
+                        <div class="item">
+                            <h3 class="txt-primary data-target" data-target="50">0</h3>
+                            <p class="text-light">Client Happy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-center align-items-center">
+                    <div class="content-banner d-flex align-items-center gap-3 mb-3" data-aos="fade-up"
+                        data-aos-delay="900">
+                        <i class="bi bi-cup-hot icon-banner fs-1"></i>
+                        <div class="limiting"></div>
+                        <div class="item">
+                            <h3 class="txt-primary data-target" data-target="567">0</h3>
+                            <p class="text-light">Coffe Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <script>
         var typed = new Typed('.typing', {
