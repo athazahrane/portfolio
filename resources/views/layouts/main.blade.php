@@ -32,6 +32,8 @@
         @yield('content')
     </div>
 
+    @include('layouts.footer')
+
 
     {{-- bootstrap script --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -49,10 +51,8 @@
 
     <script>
         $(document).ready(function() {
-            // Initialize AOS
             AOS.init();
 
-            // Function to animate numbers
             function animateNumbers(element, target) {
                 $({
                     countNum: 0
@@ -70,24 +70,20 @@
                 });
             }
 
-            // Function to animate progress bar width
             function animateProgressBar(element, target) {
                 element.animate({
                     width: target
                 }, 2000);
             }
 
-            // Trigger animation when AOS event fires
             document.addEventListener('aos:in', function(event) {
                 let elements = $(event.detail);
 
-                // Animate numbers
                 elements.find('h3.data-target').each(function() {
                     let target = $(this).data('target');
                     animateNumbers($(this), target);
                 });
 
-                // Animate progress bars
                 elements.find('.value').each(function() {
                     let target = $(this).data('value');
                     animateProgressBar($(this), target);

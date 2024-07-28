@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="custom-scrollbar" id="customScrollbar"></div>
+    <div class="custom-scrollba" id="customScrollbar"></div>
 
     <section class="hero d-flex justify-content-center flex-column" id="hero">
         <div class="container">
@@ -327,7 +327,84 @@
         </div>
     </section>
 
-    
+
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="section-title mb-5 text-light" data-aos="fade-up">Services</h2>
+                </div>
+            </div>
+            <div class="row" id="service-row">
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="100">
+                        <i class="bi bi-laptop fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">Web Development</h5>
+                        <p class="text-light">I create responsive and dynamic websites using the latest web technologies,
+                            ensuring a seamless
+                            user experience across all devices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-palette fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">UI/UX Design</h5>
+                        <p class="text-light">Designing user-friendly interfaces with a focus on user experience, creating
+                            visually appealing
+                            and easy-to-navigate designs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-gear fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">Technical Support</h5>
+                        <p class="text-light">Providing technical support and maintenance to ensure your website runs
+                            smoothly and efficiently,
+                            addressing any issues promptly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="400">
+                        <i class="bi bi-speedometer2 fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">Performance Optimization</h5>
+                        <p class="text-light">Optimizing website performance to enhance speed and efficiency, ensuring fast
+                            load times and a
+                            better user experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="500">
+                        <i class="bi bi-lock fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">Web Security</h5>
+                        <p class="text-light">Implementing robust security measures to protect your website from cyber
+                            threats and ensure the
+                            safety of user data.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 service-card-container">
+                    <div class="service-card p-4 rounded shadow" data-aos="fade-up" data-aos-delay="600">
+                        <i class="bi bi-graph-up-arrow fs-2"></i>
+                        <h5 class="txt-primary mb-3 mt-2">SEO Optimization</h5>
+                        <p class="text-light">Improving your website's visibility on search engines through effective SEO
+                            strategies, driving
+                            more organic traffic to your site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hire" id="hire">
+        <div class="container d-flex flex-column gap-3 justify-content-center align-items-center py-5">
+            <h4 class="text-light text-capitalize">i am available to freelance</h4>
+            <div class="button-borders">
+                <button class="primary-button">BUTTON</button>
+            </div>
+        </div>
+    </section>
+
 
     <script>
         var typed = new Typed('.typing', {
